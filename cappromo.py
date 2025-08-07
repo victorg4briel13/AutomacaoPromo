@@ -105,7 +105,7 @@ def gerar_card(nome, descricao, preco, frete_gratis, temcupom, cupom, imagem_pro
 
     # Salvar imagem final
     nome_arquivo = f"card_{nome.replace(' ', '_')}.png"
-    card.convert("RGB").save(nome_arquivo)
+    card.convert("RGB").save("D:\Capitão promo\Automação promo\cards criados\\" + nome_arquivo)
     print(f"Card salvo como: {nome_arquivo}")
 
 # Exemplo de uso:
